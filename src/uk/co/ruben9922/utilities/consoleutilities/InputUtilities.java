@@ -28,6 +28,8 @@ public final class InputUtilities {
             if (inputValid = scanner.hasNextInt()) {
                 result = scanner.nextInt();
                 inputValid = ((min == null || result >= min) && (max == null || result < max));
+            } else {
+                scanner.next();
             }
 
             // Display error message if input invalid
