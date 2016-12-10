@@ -9,8 +9,8 @@ public final class InputUtilities {
         // Assign default values to parameters with null values
         if (prompt == null || errorMessage == null) {
             String rangeString = max != null ?
-                    (min != null ? String.format("between %d (incl.) and %d (excl.)", min, max) :
-                            String.format("less than or equal to %d", max)) :
+                    (min != null ? String.format("between %d and %d (inclusive)", min, max - 1) :
+                            String.format("less than %d", max)) :
                     (min != null ? String.format("greater than or equal to %d", min) : EMPTY_STRING);
             if (prompt == null) {
                 prompt = "Enter integer " + rangeString;
