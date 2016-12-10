@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact name="ConsoleUtilities:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ConsoleUtilities_jar</output-path>
+    <root id="root">
+      <element id="archive" name="ConsoleUtilities.jar">
+        <element id="module-output" name="ConsoleUtilities" />
+      </element>
+    </root>
+  </artifact>
+</component>
