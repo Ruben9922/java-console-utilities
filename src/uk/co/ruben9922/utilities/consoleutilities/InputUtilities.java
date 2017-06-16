@@ -54,7 +54,6 @@ public final class InputUtilities {
         for (int i = 0; i < options.length; i++) {
             System.out.format("  %d: %s\n", i, options[i]);
         }
-        System.out.println();
 
         return inputInt(scanner, prompt, 0, options.length, "Invalid option!");
     }
