@@ -46,6 +46,11 @@ public final class InputUtilities {
     }
 
     public static int inputOptionInt(Scanner scanner, String[] options, String prompt) {
+        // Assign default value to prompt parameter if null
+        if (prompt == null) {
+            prompt = String.format("Enter option [%d..%d]: ", 0, options.length - 1);
+        }
+
         for (int i = 0; i < options.length; i++) {
             System.out.format("  %d: %s", i, options[i]);
         }
@@ -55,7 +60,7 @@ public final class InputUtilities {
     }
 
     public static int inputOptionInt(Scanner scanner, String[] options) {
-        return inputOptionInt(scanner, options, "Choose option: ");
+        return inputOptionInt(scanner, options, null);
     }
 
     public static boolean inputYOrN(Scanner scanner, String prompt) {
