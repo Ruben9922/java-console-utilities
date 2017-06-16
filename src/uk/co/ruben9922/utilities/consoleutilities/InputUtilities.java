@@ -52,7 +52,7 @@ public final class InputUtilities {
         }
 
         for (int i = 0; i < options.length; i++) {
-            System.out.format("  %d: %s", i, options[i]);
+            System.out.format("  %d: %s\n", i, options[i]);
         }
         System.out.println();
 
